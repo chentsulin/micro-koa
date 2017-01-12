@@ -1,0 +1,32 @@
+{
+  "name": "micro-koa",
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "repository": "https://github.com/chentsulin/micro-koa",
+  "author": "C.T. Lin <chentsulin@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-eslint": "^7.1.1",
+    "babel-jest": "^18.0.0",
+    "babel-plugin-transform-class-properties": "^6.19.0",
+    "babel-plugin-transform-object-rest-spread": "^6.20.2",
+    "babel-preset-env": "^1.1.8",
+    "eslint-config-airbnb-base": "^11.0.1",
+    "eslint-plugin-import": "^2.2.0",
+    "jest": "^18.1.0",
+    "rimraf": "^2.5.4"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.20.0",
+    "is-async-supported": "^1.2.0",
+    "koa": "^2.0.0",
+    "koa-bodyparser": "^3.2.0",
+    "minimist": "^1.2.0"
+  },
+  "scripts": {
+    "build": "npm run clean && babel -d babel src -d lib --ignore __tests__,__mocks__ --copy-files",
+    "clean": "rimraf lib",
+    "prepublish": "npm run build"
+  }
+}
