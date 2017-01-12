@@ -103,7 +103,7 @@ npm start
 
 **`createError(code, msg, orig)`**
 
-- Use `require('micro').createError`.
+- Use `require('micro-koa').createError`.
 - Creates an error object with a `statusCode`.
 - Useful for easily throwing errors with HTTP status codes, which are interpreted by the [built-in error handling](#error-handling).
 - `orig` sets `error.originalError` which identifies the original error (if any).
