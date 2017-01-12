@@ -4,6 +4,15 @@
 
 > Creating microservices with koa inspired by zeit/micro
 
+## Features
+
+* **Easy**. You just need to learn `koa`.
+* **Micro**. The whole project is ~100 lines of code.
+* **Agile**. Super easy deployment and containerization.
+* **Simple**. Oriented for single purpose modules (function).
+* **Explicit**. No middleware. Modules declare all dependencies.
+* Bulit-in `koa-bodyparse`.
+
 ## Example
 
 The following example `sleep.js` will wait before responding (without blocking!)
