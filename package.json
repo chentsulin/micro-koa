@@ -1,6 +1,7 @@
 {
   "name": "micro-koa",
   "version": "0.1.0",
+  "description": "Creating microservices with koa inspired by zeit/micro",
   "main": "lib/index.js",
   "repository": "https://github.com/chentsulin/micro-koa",
   "author": "C.T. Lin <chentsulin@gmail.com>",

@@ -3,6 +3,10 @@ import bodyParser from 'koa-bodyparser';
 
 module.exports = exports = serve;
 
+exports.send = send;
+exports.createError = createError;
+
+
 function serve(fn) {
   const server = new Koa();
 
@@ -14,7 +18,13 @@ function serve(fn) {
 }
 
 
-export const createError = (code, msg, orig) => {
+function send(response, code, data) {
+  response.status = code;
+  response.body = data;
+}
+
+
+function createError(code, msg, orig) {
   const err = new Error(msg);
   err.statusCode = code;
   err.originalError = orig;
