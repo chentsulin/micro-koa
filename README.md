@@ -90,13 +90,12 @@ npm start
   - `Buffer`: `data` is written as an `octet-stream`.
   - `object`: `data` is serialized as JSON.
   - `string`: `data` is written as-is.
-- If JSON serialization fails (for example, if a cyclical reference is found), a `400` error is thrown. See [Error Handling](#error-handling).
 - Example
 
   ```js
   const { send } = require('micro-koa')
-  module.exports = async function (req, res) {
-    send(res, 400, { error: 'Please use a valid email' });
+  module.exports = async function ({ request, response }) {
+    send(response, 400, { error: 'Please use a valid email' });
   }
   ```
 #### createError
