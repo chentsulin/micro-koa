@@ -1,5 +1,7 @@
 # micro-koa
 
+[![NPM version][npm-image]][npm-url]
+
 > Creating microservices with koa inspired by zeit/micro
 
 ## Example
@@ -125,3 +127,14 @@ You can use the `micro-koa` CLI for `npm start`:
 ```
 
 Then simply run `npm start`!
+
+## Credits
+
+This package couldn't exist without the awesome [micro](https://github.com/zeit/micro) and [koa](https://github.com/koajs/koa) packages!
+
+## License
+
+MIT © [C.T. Lin](https://github.com/chentsulin/micro-koa)
+
+[npm-image]: https://badge.fury.io/js/micro-koa.svg
+[npm-url]: https://npmjs.org/package/micro-koa
