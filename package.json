@@ -3,6 +3,11 @@
   "version": "0.2.2",
   "description": "Creating microservices with koa inspired by zeit/micro",
   "main": "lib/index.js",
+  "files": [
+    "bin",
+    "lib",
+    "src"
+  ],
   "repository": "https://github.com/chentsulin/micro-koa",
   "author": "C.T. Lin <chentsulin@gmail.com>",
   "license": "MIT",
