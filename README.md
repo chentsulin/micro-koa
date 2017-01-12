@@ -9,12 +9,12 @@
 The following example `sleep.js` will wait before responding (without blocking!)
 
 ```js
-const { send } = require('micro-koa');
 const sleep = require('then-sleep');
 
 module.exports = async function ({ request, response }) {
   await sleep(500);
-  send(res, 200, 'Ready!');
+  response.status = 200;
+  response.body = 'woot';
 };
 ```
 
