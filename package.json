@@ -29,5 +29,8 @@
     "build": "npm run clean && babel -d babel src -d lib --ignore __tests__,__mocks__ --copy-files",
     "clean": "rimraf lib",
     "prepublish": "npm run build"
+  },
+  "bin": {
+    "micro": "./bin/micro"
   }
 }
