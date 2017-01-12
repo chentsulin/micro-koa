@@ -31,6 +31,6 @@
     "prepublish": "npm run build"
   },
   "bin": {
-    "micro": "./bin/micro"
+    "micro-koa": "./bin/micro-koa"
   }
 }
