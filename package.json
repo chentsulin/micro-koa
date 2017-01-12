@@ -1,6 +1,6 @@
 {
   "name": "micro-koa",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Creating microservices with koa inspired by zeit/micro",
   "main": "lib/index.js",
   "files": [
